@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BlockHost — Minecraft Server Hosting</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Block<span>Host</span></div>
+  <nav>
+    <a href="#plans">Plans</a>
+    <a href="#faq">FAQ</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="badge" id="modeBadge">Loading…</div>
+    <h1>Minecraft hosting, minus the lag.</h1>
+    <p>Instant setup, NVMe SSD storage, DDoS protection and one-click modpack installs — on Indian servers, priced in rupees.</p>
+    <a href="#plans" class="btn">View plans</a>
+  </section>
+
+  <section class="features">
+    <div class="feature"><h3>⚡ Instant setup</h3><p>Your server is online the moment you pay — no waiting.</p></div>
+    <div class="feature"><h3>🛡 DDoS protection</h3><p>Enterprise-grade filtering on every plan, free.</p></div>
+    <div class="feature"><h3>💾 NVMe SSD</h3><p>Blazing-fast chunk loading and world saves.</p></div>
+    <div class="feature"><h3>🧩 One-click modpacks</h3><p>Paper, Forge, Fabric, Spigot and 100+ modpacks.</p></div>
+  </section>
+
+  <h2 class="section-title" id="plans">Choose your plan</h2>
+  <p class="section-sub">All plans include unlimited players slots cap, full FTP access and 24/7 support.</p>
+  <div class="plans" id="planGrid"></div>
+
+  <section class="faq" id="faq">
+    <h2 class="section-title">Frequently asked</h2>
+    <details><summary>How fast is setup?</summary><p>Under 60 seconds. After checkout your server appears on your dashboard with its IP ready to join.</p></details>
+    <details><summary>Can I upgrade later?</summary><p>Yes — upgrade or downgrade any time and only pay the difference.</p></details>
+    <details><summary>What payment methods do you accept?</summary><p>UPI, credit/debit cards, netbanking and wallets via Razorpay.</p></details>
+    <details><summary>Is there a refund policy?</summary><p>Yes, a 7-day money-back guarantee on first purchases.</p></details>
+  </section>
+</div>
+
+<footer>© 2026 BlockHost. Not affiliated with Mojang or Microsoft. Built with ♥ in India.</footer>
+
+<script src="app.js"></script>
+<script>
+  loadConfig();
+  loadPlans();
+</script>
+</body>
+</html>

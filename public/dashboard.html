@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>My Servers — BlockHost</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="logo">Block<span>Host</span></div>
+  <nav><a href="index.html">Plans</a><a href="checkout.html">Checkout</a></nav>
+</header>
+
+<div class="wrap">
+  <h2 class="section-title" style="text-align:left">My servers</h2>
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>Server</th><th>Plan</th><th>RAM</th><th>Address</th><th>Status</th><th></th></tr>
+      </thead>
+      <tbody id="serverRows"></tbody>
+    </table>
+  </div>
+
+  <div id="panel" style="display:none;margin-top:28px">
+    <h3 id="panelTitle"></h3>
+    <div class="controls">
+      <button class="btn" data-act="start">▶ Start</button>
+      <button class="btn danger" data-act="stop">■ Stop</button>
+      <button class="btn ghost" data-act="restart">↻ Restart</button>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="v" id="statPlayers">0</div><div class="k">Players online</div></div>
+      <div class="stat"><div class="v" id="statRam">0%</div><div class="k">RAM usage</div><div class="bar"><span id="barRam" style="width:0%"></span></div></div>
+      <div class="stat"><div class="v" id="statCpu">0%</div><div class="k">CPU usage</div><div class="bar"><span id="barCpu" style="width:0%"></span></div></div>
+    </div>
+    <h4>Live console</h4>
+    <div class="console" id="console"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+<script>initDashboard();</script>
+</body>
+</html>
